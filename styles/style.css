@@ -6,3 +6,187 @@ Green: #00B172
 White: #FFF
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+    color: #1A1A1A;
+    font-family: 'Montserrat';
+}
+
+/* Navigation Bar */
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px
+}
+
+.logo {
+    width: 20%;
+}
+
+.ulNav {
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: lighter;
+ 
+}  
+
+.ulNav > li {
+    padding: 10px;
+    font-size: 20px;
+}    
+
+.ulNav > li:hover {
+    background-color: lightgrey;
+    transition: background-color 2s linear;
+}
+
+/* Header */
+
+header {
+    background-image: url("../images/landing.jpg");
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: white;
+    position: relative;
+    text-align: center; 
+}
+
+.spotifyHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 70px;
+} 
+
+.pHeader {
+    font-weight: lighter;
+    font-size: 27px; 
+}
+
+
+/* Central Section */
+ .centralSection {
+    text-align: center;
+}
+
+.centralSection>h3 {
+    text-decoration: underline;
+    text-decoration-color:  #00B172;
+    text-underline-offset: 6px;
+    padding: 45px;
+    font-size: 28px;
+}
+
+.serviceBox {
+    padding: 20px;
+    width: 20vw;
+ 
+}
+
+.serviceBox > img {
+    width: 10vw;
+} 
+
+.serviceBox>h4 {
+   color: #00B172;
+}
+
+.centralSection > div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center; 
+    padding: 45px;
+
+} 
+
+
+/* Final Section */ 
+
+.lastSection {
+    background-color: #00B172;
+    color:  #FFF; 
+    margin: 15px;
+    position: relative;
+    padding: 10px;
+    height: 90vh;
+
+}
+
+.lastSection > h3 {
+    margin-top: 2%;
+    margin-left: 5%;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-size: 3vw;
+    font-weight: 400;
+} 
+
+.lastSectionDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whiteLogo {
+    height: 20vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.spotifyApp {
+    width: 21vw; 
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%)
+
+}
+
+.lastSectionText {
+    display: inline;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 5%;
+    
+}
+
+.lastSectionText>h4 {
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.lastSectionText>p {
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5vw;
+} 
+
+
+
+     
