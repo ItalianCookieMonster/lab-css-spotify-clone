@@ -18,6 +18,7 @@ White: #FFF
  body {
     color: #1A1A1A;
     font-family: 'Montserrat';
+    padding-top: 8vh;
 }
 
 /* Navigation Bar */
@@ -26,26 +27,48 @@ nav {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px
-}
+    position: fixed;
+    width:100%; 
+    height: 8vh;
+    background-color: #FFF;
+    top: 0;
+}   
+
 
 .logo {
-    width: 20%;
+    margin-left: 10px;
+    width: 95px;
 }
 
 .ulNav {
     display:flex;
     justify-content: space-around;
     list-style: none;
-    font-weight: lighter;
- 
+    font-size: 12px;
+    margin-right: 10px;
 }  
 
 .ulNav > li {
-    padding: 10px;
-    font-size: 20px;
+    padding: 5px;
 }    
 
+@media (min-width: 768px) {
+    .logo {
+        width: 170px;
+    }
+
+    .ulNav {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+
+
+}
+
+
+/*
 .ulNav > li:hover {
     background-color: lightgrey;
     transition: background-color 2s linear;
@@ -58,31 +81,67 @@ header {
     background-position: center;
     background-size: cover; 
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 70vh;
     color: white;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center; 
+
 }
 
 .spotifyHeader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    margin: auto;
+    width:75%;
+} 
 
 
 h1 {
-    margin-bottom: 10px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-size: 70px;
+    margin-bottom: 10px; 
+    font-size: 29px;
 } 
 
 .pHeader {
     font-weight: lighter;
-    font-size: 27px; 
+    font-size: 11px; 
 }
+
+/* Tablets Header */
+@media (min-width: 768px) {
+    h1 {
+        margin-bottom: 20px; 
+        font-size: 60px;
+    }
+
+    .pHeader {
+        font-size: 23px; 
+    }
+    
+}
+
+/* Desktop Header */
+
+@media (min-width: 992px) {
+
+    header {
+        height: 90vh;
+    }
+
+    .spotifyHeader{
+        width: 59%;
+    }
+
+    h1 {
+        margin-bottom: 30px; 
+        font-size: 65px;
+    }
+
+    .pHeader {
+        font-size: 28px;
+    }
+
+}
+
 
 
 /* Central Section */
@@ -94,32 +153,101 @@ h1 {
     text-decoration: underline;
     text-decoration-color:  #00B172;
     text-underline-offset: 6px;
-    padding: 45px;
-    font-size: 28px;
+    padding: 20px;
+    font-size: 15px;
 }
 
 .serviceBox {
-    padding: 20px;
-    width: 20vw;
+    padding: 10px;
+    width: 100px;
  
 }
 
 .serviceBox > img {
-    width: 10vw;
+    width: 40px;
 } 
 
 .serviceBox>h4 {
    color: #00B172;
+   font-size: 11px;
+   margin-bottom: 10px;
 }
+
+.serviceBox>p {
+    font-size: 9px;
+    font-weight: 300;
+}
+
 
 .centralSection > div {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     align-items: center; 
-    padding: 45px;
-
 } 
+
+
+/* Tablet Central Section */
+
+@media (min-width: 768px) {
+
+    .centralSection>h3 {
+        padding: 25px;
+        font-size: 20px;
+    }
+
+    .serviceBox {
+        padding: 10px;
+        width: 180px;
+     
+    }
+
+    .serviceBox > img {
+        width: 60px;
+    } 
+
+    .serviceBox>p {
+        font-size: 16px;
+    }
+    
+
+    .serviceBox>h4 {
+    font-size: 17px;
+    }
+  
+
+}
+
+
+/* Desktop Central Section */
+
+@media (min-width: 992px) {
+    
+    .centralSection>h3 {
+        padding: 35px;
+        font-size: 25px;
+    }
+
+    .serviceBox {
+        padding: 30px;
+        width: 210px;
+     
+    }
+
+    .serviceBox > img {
+        width: 80px;
+    } 
+
+    .serviceBox>p {
+        font-size: 19px;
+    }
+    
+
+    .serviceBox>h4 {
+    font-size: 20px;
+    }
+  
+    
+}
 
 
 /* Final Section */ 
@@ -129,64 +257,142 @@ h1 {
     color:  #FFF; 
     margin: 15px;
     position: relative;
-    padding: 10px;
-    height: 90vh;
-
-}
-
-.lastSection > h3 {
-    margin-top: 2%;
-    margin-left: 5%;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    font-size: 3vw;
-    font-weight: 400;
-} 
-
-.lastSectionDiv {
+    height: 40vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
 
+.lastSection h3 {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-size: 15px;
+    font-weight: 400;
+}  
+
 .whiteLogo {
-    height: 20vh;
+    height: 60px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
 
-}
+}  
 
 .spotifyApp {
-    width: 21vw; 
+    height: 190px;
     position: absolute;
     top: 50%;
-    right: 10%;
-    transform: translateY(-50%)
+    right: 20px;
+    transform: translateY(-50%) 
 
-}
+} 
 
 .lastSectionText {
-    display: inline;
-    width: 30%;
-    margin-top: 5%;
-    margin-left: 5%;
+  margin: 20px 0 0 20px;
+}
+
+.lastSectionSBD {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+}
+
+.lastSectionSBD>h4 {
+    font-weight: 600;
+    font-size: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.lastSectionSBD>p {
+    font-weight: lighter;
+    font-size: 7px;
+} 
+
+/* Tablet Final Section */
+
+@media (min-width: 768px) {
+    .lastSection {
+        height: 60vh;
+    }
+    
+    .lastSection h3 {
+        font-size: 30px;
+    }  
+    
+    .whiteLogo {
+        height: 110px;
+    }  
+    
+    .spotifyApp {
+        height: 430px;
+        right: 40px;
+    } 
+    
+    .lastSectionText {
+      margin: 40px 0 0 40px;
+    }
+    
+    .lastSectionSBD {
+        width: 250px;
+    }
+    
+    .lastSectionSBD>h4 {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .lastSectionSBD>p {
+        font-weight: lighter;
+        font-size: 17px;
+    } 
     
 }
 
-.lastSectionText>h4 {
-    font-weight: 600;
-    font-size: 2vw;
+
+/* Desktop Last Section */
+
+@media (min-width: 992px) {
+
+    .lastSection {
+        height: 85vh;
+    }
+    
+    .lastSection h3 {
+        font-size: 35px;    
+    }  
+    
+    .whiteLogo {
+        height: 130px;
+    }  
+    
+    .spotifyApp {
+        height: 480px;
+        right: 50px;
+    } 
+    
+    .lastSectionText {
+      margin: 50px 0 0 50px;
+    }
+    
+    .lastSectionSBD {
+        width: 300px;
+    }
+    
+    .lastSectionSBD>h4 {
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .lastSectionSBD>p {
+        font-size: 19px;
+    } 
+    
+    
 }
 
-.lastSectionText>p {
-    font-weight: lighter;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 1.5vw;
-} 
 
-
-
-     
